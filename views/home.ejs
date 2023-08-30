@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="home-container">
+  <form action="/employee/student-create" method="post">
+    <div class="mb-3">
+      <label for="student-name" class="form-label">Student Name</label>
+      <input type="text" class="form-control" id="student-name" name="name">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="college-name" class="form-label">Colleg Name</label>
+      <input type="text" class="form-control" id="college-name" name="college">
+    </div>
+    <div class="mb-3">
+      <label for="placement-status" class="form-label">Placement Status</label>
+      <input type="text" class="form-control" id="placement-status" name="status">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Student</button>
+</form>
+<ul class="list-group">
+    <% for(let student of students) { %>
+      <li class="list-group-item"><%= student.name %></li>
+    <% } %>
+  </ul>
+</div>

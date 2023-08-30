@@ -1,0 +1,11 @@
+.navbar{
+    background-color: aqua;
+}
+.signUp{
+    position: absolute;
+    right:30px;   
+}
+.signIn{
+    position: absolute;
+    right: 94px;
+}
