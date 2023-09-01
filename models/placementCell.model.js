@@ -14,10 +14,7 @@ const PlacementCellSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'CourseScore'
     },
-    interview:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Interview'
-    },
+   
     result:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Result'

@@ -1,0 +1,13 @@
+.interview-container{
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    width: 48%;
+}
+.list-group{
+    padding-left: 30px;
+    width: 48%;
+    border-left: 1px solid lightgrey;
+    height: 100vh;
+}

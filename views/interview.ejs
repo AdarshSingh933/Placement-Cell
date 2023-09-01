@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/interview.css">
+<div class="interview-container">
+  <form action="/interview/create" method="post">
+    <div class="mb-3">
+      <label for="company-name" class="form-label">Company Name</label>
+      <input type="text" class="form-control" id="company-name" name="companyName">
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Date</label>
+      <input type="date" class="form-control" id="date" name="date">
+    </div>
+    <div class="mb-3">
+      <label for="student-email" class="form-label">Student Email</label>
+      <input type="email" class="form-control" id="student-email" name="studentEmail">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+<ul class="list-group">
+    <% for(let interview of interviews) { %>
+        <li class="list-group-item"><a href="/interview/student-list/<%= interview.companyName %>"><%= interview.companyName %></a></li>
+      <% } %>
+  </ul>
+</div>
